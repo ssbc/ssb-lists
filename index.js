@@ -27,7 +27,6 @@ exports.init = function (sbot, config) {
 
   var lists = sbot._flumeUse('lists', Reduce(1, function (state, data) {
     if(!state) {
-      console.log("INIT STATE")
       state = {graph: g = g || {}}
     }
 
@@ -50,7 +49,6 @@ exports.init = function (sbot, config) {
       //TODO: insert mutable document model here.
       //or maybe just express via allowing a list to subscribe to another list?
       //check if this author is authorized to update list
-      console.log('CONTACT', content)
       if(ref.isMsg(content.list)) {
         var rel_author = g[content.list] ? g[content.list][data.value.author] : -1
         if(rel_author > 0 && rel_author <= 1 && isId(content.contact))
@@ -68,23 +66,25 @@ exports.init = function (sbot, config) {
         update(data.value.author, content.list, content.subscribe === true ? 0.1 : -2)
       }
     }
-    console.log('STATE', state)
-
-    console.log('update', data)
     return state
   }))
 
   lists.get(function (err, value) {
-    if(err || !value) {
-      g = {}
-      console.log('Get_initialize', g)
-    }
-    else    g = value.graph
+    if(err || !value) g = {}
+    else              g = value.graph
     layer(g)
   })
 
   return lists
 }
+
+
+
+
+
+
+
+
 
 
 
