@@ -1,0 +1,23 @@
+{
+  "name": "ssb-block-list",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dominictarr/ssb-block-list",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/ssb-block-list.git"
+  },
+  "dependencies": {
+    "flumeview-reduce": "^1.3.14",
+    "ssb-ref": "^2.13.9"
+  },
+  "devDependencies": {
+    "ssb-server": "^13.5.2",
+    "tape": "^4.9.1"
+  },
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}
