@@ -1,4 +1,6 @@
-# ssb-block-list
+# ssb-list
+
+block or follow lists for ssb.
 
 
 ## License

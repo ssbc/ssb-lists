@@ -1,11 +1,11 @@
 {
-  "name": "ssb-block-list",
+  "name": "ssb-list",
   "description": "",
   "version": "1.0.0",
-  "homepage": "https://github.com/dominictarr/ssb-block-list",
+  "homepage": "https://github.com/dominictarr/ssb-list",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/ssb-block-list.git"
+    "url": "git://github.com/dominictarr/ssb-list.git"
   },
   "dependencies": {
     "flumeview-reduce": "^1.3.14",
