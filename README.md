@@ -40,6 +40,10 @@ but the trick is that subscribing uses a low hop count of 0.1.
 (as same-as would) this means that if you subscribe to a block
 list, it's follows/blocks are treated the same as your own.
 
+> In secure scuttlebutt, "same-as" is a method of identifying multiple
+> feeds/identities as belonging to one individual. One person may manage
+> many feeds and "same-as" allows them to be linked together
+
 ## usage
 
 I just wrote this! so currently no ssb clients support this.
